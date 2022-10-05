@@ -2,6 +2,8 @@ import "./home.scss";
 import React from "react";
 import ProjectPage from "../projectPage";
 import SkillPage from "../skillPage";
+import ContactPage from "../contactPage";
+import Intro from "../../Components/intro";
 
 const Home = () => {
     console.log(window.innerHeight);
@@ -20,15 +22,19 @@ const Home = () => {
         if (event.currentTarget.scrollTop > 1300) {
             setBg("header-profile bg-pink");
         }
+        if (event.currentTarget.scrollTop > 1900) {
+            setBg("header-profile bg-black");
+        }
     };
     return (
         <div className="home" onScroll={handleScroll}>
             <div className="header">
-                Header
+                <Intro />
                 <div className={bg}></div>
             </div>
             <ProjectPage />
             <SkillPage />
+            <ContactPage />
         </div>
     );
 };

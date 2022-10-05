@@ -7,6 +7,7 @@
 .header {
     width: 100%;
     height: 100vh;
+    position: relative;
     scroll-snap-align: start;
 
     &-profile {
@@ -15,21 +16,30 @@
         top: 0;
         left: 0;
         position: fixed;
-        background-color: rgb(114, 246, 121);
+        background: rgb(29, 193, 121);
+        background: linear-gradient(31deg, rgba(29, 193, 121, 1) 55%, rgba(78, 244, 171, 1) 100%);
         z-index: -100;
-        transition: 1s;
+        transition: background-image 1s;
     }
 }
 
 
 .bg-green {
-    background-color: rgb(114, 246, 121);
+    background: rgb(29, 193, 121);
+    background: linear-gradient(31deg, rgba(29, 193, 121, 1) 55%, rgba(78, 244, 171, 1) 100%);
 }
 
 .bg-yellow {
-    background-color: rgb(240, 247, 98);
+    background: rgb(246, 125, 159);
+    background: linear-gradient(31deg, rgba(246, 125, 159, 1) 47%, rgba(246, 125, 159, 0.702140231092437) 100%);
 }
 
 .bg-pink {
-    background-color: rgb(247, 111, 186);
+    background: rgb(255, 94, 4);
+    background: linear-gradient(31deg, rgba(255, 94, 4, 1) 47%, rgba(250, 153, 0, 1) 100%);
+}
+
+.bg-black {
+    background: rgb(17, 34, 93);
+    background: linear-gradient(90deg, rgba(17, 34, 93, 1) 54%, rgba(33, 58, 144, 1) 100%);
 }
