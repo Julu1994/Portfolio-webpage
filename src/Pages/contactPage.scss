@@ -3,6 +3,7 @@
     height: 100vh;
     scroll-snap-align: start;
     position: relative;
+    z-index: -100;
 
     &-item {
         width: 100%;

@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    bottom: -10vh;
+    bottom: -5vh;
+    z-index: -1000;
 
     &-pic {
         width: 3rem;
@@ -28,7 +29,7 @@
     }
 
     100% {
-        transform: translateY(-52vh);
+        transform: translateY(-47vh);
         opacity: 0;
     }
 }
