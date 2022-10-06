@@ -14,4 +14,26 @@
 
 
     }
+
+    &-top {
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    &-bottom {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
 }
