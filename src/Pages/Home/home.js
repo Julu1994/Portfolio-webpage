@@ -4,6 +4,9 @@ import ProjectPage from "../projectPage";
 import SkillPage from "../skillPage";
 import ContactPage from "../contactPage";
 import Intro from "../../Components/intro";
+import Profile from "../../Components/profile";
+import IntroTexts from "../../Components/introTexts";
+import { Bubble } from "../../Components/bubble";
 
 const Home = () => {
     console.log(window.innerHeight);
@@ -30,6 +33,9 @@ const Home = () => {
         <div className="home" onScroll={handleScroll}>
             <div className="header">
                 <Intro />
+                <Profile />
+                <IntroTexts />
+                <Bubble />
                 <div className={bg}></div>
             </div>
             <ProjectPage />

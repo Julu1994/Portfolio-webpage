@@ -1,0 +1,21 @@
+.profile {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: rgb(174, 243, 169);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 500;
+
+    &-img {
+        margin: 5%;
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        background-image: url(../imgs/jewel.png);
+        background-size: cover;
+        background-position: center;
+    }
+}
