@@ -9,7 +9,7 @@ import IntroTexts from "../../Components/introTexts";
 import { Bubble } from "../../Components/bubble";
 
 const Home = () => {
-    console.log(window.innerHeight);
+    //console.log(window.innerHeight);
     const [bg, setBg] = React.useState("header-profile");
     const handleScroll = (event) => {
         // console.log("scrollTop: ", event.currentTarget.scrollTop);
