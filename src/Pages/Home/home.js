@@ -7,6 +7,7 @@ import Intro from "../../Components/intro";
 import Profile from "../../Components/profile";
 import IntroTexts from "../../Components/introTexts";
 import { Bubble } from "../../Components/bubble";
+import Navbar from "../../Components/navbar";
 
 const Home = () => {
     //console.log(window.innerHeight);
@@ -32,10 +33,12 @@ const Home = () => {
     return (
         <div className="home" onScroll={handleScroll}>
             <div className="header">
+                <Navbar />
                 <Intro />
                 <Profile />
                 <IntroTexts />
                 <Bubble />
+
                 <div className={bg}></div>
             </div>
             <ProjectPage />
