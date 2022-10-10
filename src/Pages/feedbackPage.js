@@ -25,13 +25,16 @@ const FeedbackPage = () => {
                 </button>
                 <button className="feedback-btn" onClick={handleNotification}>
                     <ImNeutral size={40} color={"#FFD700"} />
-                    <p>Needs improvement</p>
+                    <p>Its average</p>
                 </button>
                 <button className="feedback-btn" onClick={handleNotification}>
                     <ImHappy size={40} color={"#00FF00"} />
                     <p>Its Good</p>
                 </button>
-                <button className="feedback-btn" onClick={handleNotification}>
+                <button
+                    className="feedback-btn"
+                    onClick={handleNotification}
+                    style={{ margin: "0" }}>
                     <ImWink size={40} color={"#32CD32"} />
                     <p> Its Excellent</p>
                 </button>
@@ -77,7 +80,9 @@ const FeedbackPage = () => {
                 <a
                     className="contacts-link"
                     href="https://www.instagram.com/mrjewel837/">
-                    <button className="contacts-btn">
+                    <button
+                        className="contacts-btn"
+                        style={{ marginRight: "0" }}>
                         <div
                             className="contacts-icon"
                             style={{ backgroundColor: "#ff4081" }}>

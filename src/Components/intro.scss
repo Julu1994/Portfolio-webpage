@@ -6,7 +6,7 @@
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 30px;
+    font-size: 2rem;
     font-family: 'Cabin', sans-serif;
 }
 
@@ -69,5 +69,16 @@
     100% {
         opacity: 1;
         visibility: visible;
+    }
+}
+
+@media (max-width: 560px) {
+    .intro {
+        top: 15%;
+        font-size: 1.4rem;
+    }
+
+    .intro-title {
+        width: max-content;
     }
 }
