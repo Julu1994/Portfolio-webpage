@@ -1,4 +1,4 @@
-import "./contactPage.scss";
+import "./feedbackPage.scss";
 import React from "react";
 import { Bubble } from "../Components/bubble";
 import { ImHappy, ImWink, ImSad, ImNeutral } from "react-icons/im";
@@ -6,15 +6,16 @@ import SectionTitle from "../Components/sectionTitle";
 import toast from "react-hot-toast";
 import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
+import { Tooltip } from "@mui/material";
 
 const handleNotification = () => {
     toast.success("Thanks for your feedback 😉");
 };
 
-const ContactPage = () => {
+const FeedbackPage = () => {
     return (
-        <div className="contacts">
-            <div className="contacts-top">
+        <div className="feedback" id="feedback-section">
+            <div className="feedback-top">
                 <h4 className="feedback-header">
                     What do you think about my work ?
                 </h4>
@@ -36,7 +37,7 @@ const ContactPage = () => {
                 </button>
             </div>
             <SectionTitle text={"Feedback"} bg={"#0026a7"} />
-            <div className="contacts-bottom">
+            <div className="feedback-bottom">
                 <a
                     className="contacts-link"
                     href="https://www.linkedin.com/in/mahamudur-jewel-48603816b/">
@@ -62,14 +63,16 @@ const ContactPage = () => {
                 <a
                     className="contacts-link"
                     href="https://mail.google.com/mail/u/0/?fs=1&to=mrjewel837@gmail.com&tf=cm">
-                    <button className="contacts-btn">
-                        <div
-                            className="contacts-icon"
-                            style={{ backgroundColor: "#4caf50" }}>
-                            <AiOutlineMail size={35} className="icon" />
-                        </div>
-                        <span className="contacts-text"> Gmail </span>
-                    </button>
+                    <Tooltip size="large" title="mrjewel837@gmail.com">
+                        <button className="contacts-btn">
+                            <div
+                                className="contacts-icon"
+                                style={{ backgroundColor: "#4caf50" }}>
+                                <AiOutlineMail size={35} className="icon" />
+                            </div>
+                            <span className="contacts-text"> Gmail </span>
+                        </button>
+                    </Tooltip>
                 </a>
                 <a
                     className="contacts-link"
@@ -89,4 +92,4 @@ const ContactPage = () => {
     );
 };
 
-export default ContactPage;
+export default FeedbackPage;

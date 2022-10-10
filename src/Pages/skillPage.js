@@ -10,7 +10,7 @@ import { DiCss3, DiJavascript1 } from "react-icons/di";
 
 const SkillPage = () => {
     return (
-        <div className="skills">
+        <div className="skills" id="skills-section">
             <div className="skills-item"></div>
             <SectionTitle text={"Tech Stacks"} bg={"#d46b3c"} />
             <div className="skills-top">

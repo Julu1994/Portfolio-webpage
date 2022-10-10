@@ -43,7 +43,7 @@ const Navbar = () => {
             onKeyDown={toggleDrawer(anchor, false)}>
             <List>
                 <ListItem disablePadding>
-                    <ListItemButton>
+                    <ListItemButton to="#home">
                         <ListItemIcon>
                             <AiFillHome size={25} color="#1de9b6" />
                         </ListItemIcon>
@@ -51,15 +51,16 @@ const Navbar = () => {
                     </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding sx={{ mt: "1rem" }}>
-                    <ListItemButton>
+                    <ListItemButton to="#project-section">
                         <ListItemIcon>
                             <SiPolywork size={25} color="#ff4081" />
                         </ListItemIcon>
                         <ListItemText primary={"Projects"} />
                     </ListItemButton>
                 </ListItem>
+
                 <ListItem disablePadding sx={{ mt: "1rem" }}>
-                    <ListItemButton>
+                    <ListItemButton to="#skills-section">
                         <ListItemIcon>
                             <AiFillCodeSandboxCircle
                                 size={25}
@@ -70,7 +71,7 @@ const Navbar = () => {
                     </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding sx={{ mt: "1rem" }}>
-                    <ListItemButton>
+                    <ListItemButton to="#feedback-section">
                         <ListItemIcon>
                             <BsFillEmojiSmileFill size={25} color="#1e88e5 " />
                         </ListItemIcon>
@@ -78,7 +79,7 @@ const Navbar = () => {
                     </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding sx={{ mt: "1rem" }}>
-                    <ListItemButton>
+                    <ListItemButton to="#feedback-section">
                         <ListItemIcon>
                             <AiFillContacts size={25} color="#d500f9" />
                         </ListItemIcon>
@@ -98,7 +99,12 @@ const Navbar = () => {
     );
 
     return (
-        <div style={{ position: "absolute", top: "3%", right: "3%" }}>
+        <div
+            style={{
+                position: "absolute",
+                top: "3%",
+                right: "3%",
+            }}>
             <IconButton
                 sx={{ backgroundColor: "#00c853" }}
                 onClick={toggleDrawer("left", true)}>

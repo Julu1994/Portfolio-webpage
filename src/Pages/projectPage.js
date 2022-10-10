@@ -7,7 +7,7 @@ import ProjectCard from "../Components/projectCard";
 
 const ProjectPage = () => {
     return (
-        <div className="projects">
+        <div className="projects" id="project-section">
             <div className="projects-item"></div>
             <SectionTitle text={"Projects"} />
             <div className="projects-top">

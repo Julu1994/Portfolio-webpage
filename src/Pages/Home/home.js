@@ -2,7 +2,7 @@ import "./home.scss";
 import React from "react";
 import ProjectPage from "../projectPage";
 import SkillPage from "../skillPage";
-import ContactPage from "../contactPage";
+import FeedbackPage from "../feedbackPage";
 import Intro from "../../Components/intro";
 import Profile from "../../Components/profile";
 import IntroTexts from "../../Components/introTexts";
@@ -32,7 +32,7 @@ const Home = () => {
     };
     return (
         <div className="home" onScroll={handleScroll}>
-            <div className="header">
+            <div className="header" id="home">
                 <Navbar />
                 <Intro />
                 <Profile />
@@ -43,7 +43,7 @@ const Home = () => {
             </div>
             <ProjectPage />
             <SkillPage />
-            <ContactPage />
+            <FeedbackPage />
         </div>
     );
 };
