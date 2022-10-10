@@ -86,18 +86,18 @@ const Navbar = () => {
                         <ListItemText primary={"Contact"} />
                     </ListItemButton>
                 </ListItem>
-                <ListItem disablePadding sx={{ mt: "1rem" }}>
-                    <a
-                        href="https://firebasestorage.googleapis.com/v0/b/mychat-46b79.appspot.com/o/Portfolio%2FJewel's%20cv4.pdf?alt=media&token=637d75e5-cb56-476f-bfa0-9d1f90d973e8"
-                        style={{ textDecoration: "none", color: "#263238" }}>
+                <a
+                    href="https://firebasestorage.googleapis.com/v0/b/mychat-46b79.appspot.com/o/Portfolio%2FJewel's%20cv4.pdf?alt=media&token=637d75e5-cb56-476f-bfa0-9d1f90d973e8"
+                    style={{ textDecoration: "none", color: "#263238" }}>
+                    <ListItem disablePadding sx={{ mt: "1rem" }}>
                         <ListItemButton>
                             <ListItemIcon>
                                 <AiFillProfile size={25} color="#00c853 " />
                             </ListItemIcon>
                             <ListItemText primary={"Resume"} />
                         </ListItemButton>
-                    </a>
-                </ListItem>
+                    </ListItem>
+                </a>
             </List>
         </Box>
     );
