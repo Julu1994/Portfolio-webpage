@@ -37,3 +37,15 @@
         align-items: flex-end;
     }
 }
+
+@media(max-width: 760px) {
+    .projects-top {
+        top: 5%;
+
+    }
+
+    .projects-bottom {
+        bottom: 5%;
+
+    }
+}

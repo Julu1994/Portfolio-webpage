@@ -12,3 +12,9 @@
         font-family: 'Dancing Script', cursive;
     }
 }
+
+@media (max-width: 760px) {
+    .texts {
+        top: 70%;
+    }
+}

@@ -87,7 +87,7 @@ const Navbar = () => {
                     </ListItemButton>
                 </ListItem>
                 <a
-                    href="https://firebasestorage.googleapis.com/v0/b/mychat-46b79.appspot.com/o/Portfolio%2FJewel's%20cv4.pdf?alt=media&token=637d75e5-cb56-476f-bfa0-9d1f90d973e8"
+                    href="https://firebasestorage.googleapis.com/v0/b/mychat-46b79.appspot.com/o/Portfolio%2FMahamudurs%20Resume(B).pdf?alt=media&token=1cb82570-148f-4b91-975a-09856718abdc"
                     style={{ textDecoration: "none", color: "#263238" }}>
                     <ListItem disablePadding sx={{ mt: "1rem" }}>
                         <ListItemButton>

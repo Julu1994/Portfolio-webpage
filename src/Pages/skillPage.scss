@@ -45,12 +45,14 @@
 
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
     .skills-top {
+        top: 10%;
         column-gap: 1rem;
     }
 
     .skills-bottom {
+        bottom: 10%;
         column-gap: 1rem;
     }
 }
