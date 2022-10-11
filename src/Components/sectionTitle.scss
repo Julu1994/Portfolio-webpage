@@ -31,3 +31,9 @@
         font-family: 'Signika Negative', sans-serif;
     }
 }
+
+@media(max-width: 760px) {
+    .section {
+        top: 45%;
+    }
+}
