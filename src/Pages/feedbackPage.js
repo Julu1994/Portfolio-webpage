@@ -48,7 +48,7 @@ const FeedbackPage = () => {
                         <div
                             className="contacts-icon"
                             style={{ backgroundColor: "#1976d2" }}>
-                            <AiFillLinkedin size={35} className="icon" />
+                            <AiFillLinkedin size={32} className="icon" />
                         </div>
                         <span className="contacts-text"> Linkdin</span>
                     </button>
@@ -58,7 +58,7 @@ const FeedbackPage = () => {
                         <div
                             className="contacts-icon"
                             style={{ backgroundColor: "#212121" }}>
-                            <AiFillGithub size={35} className="icon" />
+                            <AiFillGithub size={32} className="icon" />
                         </div>
                         <span className="contacts-text"> Github</span>
                     </button>
@@ -71,7 +71,7 @@ const FeedbackPage = () => {
                             <div
                                 className="contacts-icon"
                                 style={{ backgroundColor: "#4caf50" }}>
-                                <AiOutlineMail size={35} className="icon" />
+                                <AiOutlineMail size={32} className="icon" />
                             </div>
                             <span className="contacts-text"> Gmail </span>
                         </button>
@@ -86,7 +86,7 @@ const FeedbackPage = () => {
                         <div
                             className="contacts-icon"
                             style={{ backgroundColor: "#ff4081" }}>
-                            <BsInstagram size={35} className="icon" />
+                            <BsInstagram size={32} className="icon" />
                         </div>
                         <span className="contacts-text"> Instagram</span>
                     </button>

@@ -31,12 +31,12 @@
         margin-bottom: 3rem;
         font-size: 1.6rem;
         font-family: 'Roboto Condensed', sans-serif;
-        padding-right: 4rem;
+        padding-right: 0;
         color: rgba(255, 255, 255, 0.554);
     }
 
     &-btn {
-        margin-right: 2rem;
+        width: 5rem;
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -179,8 +179,9 @@
     }
 
     .feedback-btn {
-        margin-right: 1rem;
+        width: 4rem;
     }
+
 
     .feedback-bottom {
         bottom: 15%;
@@ -190,5 +191,15 @@
 
     .contacts-btn {
         margin-right: .6rem;
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1.5rem;
+        border-radius: 1.5rem;
+    }
+
+    .contacts-icon {
+        border-radius: 1.5rem;
+        width: 3rem;
+        height: 3rem;
     }
 }
