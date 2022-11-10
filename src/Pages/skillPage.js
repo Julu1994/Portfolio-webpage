@@ -12,7 +12,7 @@ const SkillPage = () => {
     return (
         <div className="skills" id="skills-section">
             <div className="skills-item"></div>
-            <SectionTitle text={"Tech Stacks"} bg={"#d46b3c"} />
+            <SectionTitle text={"Skills"} bg={"#d46b3c"} />
             <div className="skills-top">
                 <DiNodejs size={60} className="react" />
                 <DiJavascript1 size={50} className="react" />
