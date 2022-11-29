@@ -1,126 +1,53 @@
-import * as React from "react";
-import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
-import { FaHamburger } from "react-icons/fa";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import { SiPolywork } from "react-icons/si";
-import { BsFillEmojiSmileFill } from "react-icons/bs";
+import React from "react";
+import { Link } from "react-router-dom";
+import "./navbar.scss";
 import {
-    AiFillHome,
-    AiFillCodeSandboxCircle,
-    AiFillContacts,
-    AiFillProfile,
+    AiFillLinkedin,
+    AiFillGithub,
+    AiOutlineMail,
+    AiOutlineInstagram,
 } from "react-icons/ai";
-import { IconButton } from "@mui/material";
+import { TiDeleteOutline } from "react-icons/ti";
 
-const Navbar = () => {
-    const [state, setState] = React.useState({
-        left: false,
-    });
-
-    const toggleDrawer = (anchor, open) => (event) => {
-        if (
-            event.type === "keydown" &&
-            (event.key === "Tab" || event.key === "Shift")
-        ) {
-            return;
-        }
-
-        setState({ ...state, [anchor]: open });
-    };
-
-    const list = (anchor) => (
-        <Box
-            sx={{
-                width: anchor === "top" || anchor === "bottom" ? "auto" : 250,
-            }}
-            role="presentation"
-            onClick={toggleDrawer(anchor, false)}
-            onKeyDown={toggleDrawer(anchor, false)}>
-            <List>
-                <ListItem disablePadding>
-                    <ListItemButton to="#home">
-                        <ListItemIcon>
-                            <AiFillHome size={25} color="#1de9b6" />
-                        </ListItemIcon>
-                        <ListItemText primary={"Home"} />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding sx={{ mt: "1rem" }}>
-                    <ListItemButton to="#project-section">
-                        <ListItemIcon>
-                            <SiPolywork size={25} color="#ff4081" />
-                        </ListItemIcon>
-                        <ListItemText primary={"Projects"} />
-                    </ListItemButton>
-                </ListItem>
-
-                <ListItem disablePadding sx={{ mt: "1rem" }}>
-                    <ListItemButton to="#skills-section">
-                        <ListItemIcon>
-                            <AiFillCodeSandboxCircle
-                                size={25}
-                                color="#ef6c00"
-                            />
-                        </ListItemIcon>
-                        <ListItemText primary={"Tech-Stacks"} />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding sx={{ mt: "1rem" }}>
-                    <ListItemButton to="#feedback-section">
-                        <ListItemIcon>
-                            <BsFillEmojiSmileFill size={25} color="#1e88e5 " />
-                        </ListItemIcon>
-                        <ListItemText primary={"Feedback"} />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding sx={{ mt: "1rem" }}>
-                    <ListItemButton to="#feedback-section">
-                        <ListItemIcon>
-                            <AiFillContacts size={25} color="#d500f9" />
-                        </ListItemIcon>
-                        <ListItemText primary={"Contact"} />
-                    </ListItemButton>
-                </ListItem>
-                <a
-                    href="https://firebasestorage.googleapis.com/v0/b/mychat-46b79.appspot.com/o/Portfolio%2FMahamudurs%20Resume(B).pdf?alt=media&token=1cb82570-148f-4b91-975a-09856718abdc"
-                    style={{ textDecoration: "none", color: "#263238" }}>
-                    <ListItem disablePadding sx={{ mt: "1rem" }}>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <AiFillProfile size={25} color="#00c853 " />
-                            </ListItemIcon>
-                            <ListItemText primary={"Resume"} />
-                        </ListItemButton>
-                    </ListItem>
-                </a>
-            </List>
-        </Box>
-    );
-
+const Navbar = ({ onclick, toggle }) => {
     return (
-        <div
-            style={{
-                position: "absolute",
-                top: "3%",
-                right: "3%",
-            }}>
-            <IconButton
-                sx={{ backgroundColor: "#00c853" }}
-                onClick={toggleDrawer("left", true)}>
-                <FaHamburger size={30} color="#ede7f6 " />
-            </IconButton>
-            <Drawer
-                anchor={"left"}
-                open={state["left"]}
-                onClose={toggleDrawer("left", false)}>
-                {list("left")}
-            </Drawer>
+        <div className={toggle ? "nav-wrapper hide-nav" : "nav-wrapper"}>
+            <div className="nav-btn" onClick={onclick}>
+                <TiDeleteOutline size={40} />
+            </div>
+
+            <nav className="navbar">
+                <ul className="navbar-list">
+                    <Link to="/" className="navbar-link">
+                        <li className="navbar-item">Home</li>
+                    </Link>
+                    <Link to="/" className="navbar-link">
+                        <li className="navbar-item">About me</li>
+                    </Link>
+                    <Link to="/" className="navbar-link">
+                        <li className="navbar-item">Portfolio</li>
+                    </Link>
+                </ul>
+            </nav>
+            <div className="social">
+                <h4 className="social-text">© Mahamudur Rahman Jewel 2022 </h4>
+                <ul className="social-list">
+                    <li className="social-icon">
+                        <AiFillLinkedin size={20} />
+                    </li>
+                    <li className="social-icon">
+                        <AiFillGithub size={20} />
+                    </li>
+                    <li className="social-icon">
+                        <AiOutlineMail size={20} />
+                    </li>
+                    <li className="social-icon">
+                        <AiOutlineInstagram size={20} />
+                    </li>
+                </ul>
+            </div>
         </div>
     );
 };
+
 export default Navbar;
