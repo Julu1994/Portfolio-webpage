@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+$color-primary: rgb(135, 125, 125);
+$color-bright: rgb(245, 238, 238);
+
+.hero-container {
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(../imgs/bg-img.jpeg);
+    border: 70px solid #fff;
+    ;
+    animation: hero-fade .5s;
+}
+
+.hero-menu {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    z-index: 2000;
+    color: rgb(140, 130, 130);
+
+    &:hover {
+        color: rgb(0, 0, 0);
+    }
+}
+
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(180deg, rgba(26, 26, 18, 0.722) 0, transparent);
+    background-repeat: repeat-x;
+    z-index: 1
+}
+
+.hero-content {
+    padding: 10% 0 0 10%;
+    color: rgb(255, 255, 255);
+    font-family: 'PT Sans Caption', sans-serif;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content p {
+    font-size: .8rem;
+
+}
+
+.hero-text {
+    font-size: 2.8rem;
+    letter-spacing: 8px;
+}
+
+.hero-social-list {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: .7rem;
+    margin-top: 2rem;
+}
+
+.hero-social-icon {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    color: $color-primary;
+    border: solid $color-primary;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-bright;
+        border: solid $color-bright;
+    }
+}
+
+@keyframes hero-fade {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: .2;
+
+    }
+
+    40% {
+        opacity: .4;
+
+    }
+
+    60% {
+        opacity: .6;
+
+    }
+
+    80% {
+        opacity: .8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-text {
+        font-size: 1.6rem;
+        letter-spacing: 6px;
+    }
+
+    .hero-content {
+        padding: 50% 0 0 10%;
+    }
+
+    .hero-content p {
+        font-size: .5rem;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .hero-container {
+        border: none;
+
+    }
+}
