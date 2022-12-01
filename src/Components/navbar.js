@@ -21,7 +21,7 @@ const Navbar = ({ onclick, toggle }) => {
                     <Link to="/" className="navbar-link">
                         <li className="navbar-item">Home</li>
                     </Link>
-                    <Link to="/" className="navbar-link">
+                    <Link to="/about" className="navbar-link">
                         <li className="navbar-item">About me</li>
                     </Link>
                     <Link to="/" className="navbar-link">

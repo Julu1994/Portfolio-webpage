@@ -10,10 +10,12 @@ const Loader = () => {
     };
     setTimeout(clsHandler, 2500);
     return (
-        <div className="logo">
-            <div className={`box ${shadow}`}>M J</div>
-            <div className="text">
-                <h4 className={`name ${textShadow}`}>Mahamudur Jewel</h4>
+        <div className="loader">
+            <div className="logo">
+                <div className={`box ${shadow}`}>M J</div>
+                <div className="text">
+                    <h4 className={`name ${textShadow}`}>Mahamudur Jewel</h4>
+                </div>
             </div>
         </div>
     );
