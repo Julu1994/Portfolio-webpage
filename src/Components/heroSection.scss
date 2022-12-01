@@ -12,7 +12,7 @@ $color-bright: rgb(255, 255, 255);
     border: 70px solid #fff;
     ;
 
-    animation: hero-fade .5s;
+    animation: hero-fade 1s;
 }
 
 
@@ -90,7 +90,7 @@ $color-bright: rgb(255, 255, 255);
     }
 
     20% {
-        opacity: .2;
+        opacity: 0;
 
     }
 
@@ -105,7 +105,7 @@ $color-bright: rgb(255, 255, 255);
     }
 
     80% {
-        opacity: .8;
+        opacity: 1;
     }
 
     100% {

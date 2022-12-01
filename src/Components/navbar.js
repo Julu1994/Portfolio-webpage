@@ -24,7 +24,7 @@ const Navbar = ({ onclick, toggle }) => {
                     <Link to="/about" className="navbar-link">
                         <li className="navbar-item">About me</li>
                     </Link>
-                    <Link to="/" className="navbar-link">
+                    <Link to="/portfolio" className="navbar-link">
                         <li className="navbar-item">Portfolio</li>
                     </Link>
                 </ul>
