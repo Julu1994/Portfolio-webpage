@@ -32,18 +32,38 @@ const Navbar = ({ onclick, toggle }) => {
             <div className="social">
                 <h4 className="social-text">© Mahamudur Rahman Jewel 2022 </h4>
                 <ul className="social-list">
-                    <li className="social-icon">
-                        <AiFillLinkedin size={20} />
-                    </li>
-                    <li className="social-icon">
-                        <AiFillGithub size={20} />
-                    </li>
-                    <li className="social-icon">
-                        <AiOutlineMail size={20} />
-                    </li>
-                    <li className="social-icon">
-                        <AiOutlineInstagram size={20} />
-                    </li>
+                    <a
+                        href="https://www.linkedin.com/in/mahamudur-jewel/"
+                        target="_blank"
+                        rel="noreferrer">
+                        <li className="social-icon">
+                            <AiFillLinkedin size={20} />
+                        </li>
+                    </a>
+                    <a
+                        href="https://github.com/Julu1994"
+                        target="_blank"
+                        rel="noreferrer">
+                        <li className="social-icon">
+                            <AiFillGithub size={20} />
+                        </li>
+                    </a>
+                    <a
+                        href="https://mail.google.com/mail/u/0/?fs=1&to=mrjewel837@gmail.com&tf=cm"
+                        target="_blank"
+                        rel="noreferrer">
+                        <li className="social-icon">
+                            <AiOutlineMail size={20} />
+                        </li>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/mrjewel837/"
+                        target="_blank"
+                        rel="noreferrer">
+                        <li className="social-icon">
+                            <AiOutlineInstagram size={20} />
+                        </li>
+                    </a>
                 </ul>
             </div>
         </div>

@@ -26,18 +26,38 @@ const HeroSection = ({ click }) => {
                         taught, it lies within the soul.
                     </p>
                     <ul className="hero-social-list">
-                        <li className="hero-social-icon">
-                            <AiFillLinkedin size={20} />
-                        </li>
-                        <li className="hero-social-icon">
-                            <AiFillGithub size={20} />
-                        </li>
-                        <li className="hero-social-icon">
-                            <AiOutlineMail size={20} />
-                        </li>
-                        <li className="hero-social-icon">
-                            <AiOutlineInstagram size={20} />
-                        </li>
+                        <a
+                            href="https://www.linkedin.com/in/mahamudur-jewel/"
+                            target="_blank"
+                            rel="noreferrer">
+                            <li className="hero-social-icon">
+                                <AiFillLinkedin size={20} />
+                            </li>
+                        </a>
+                        <a
+                            href="https://github.com/Julu1994"
+                            target="_blank"
+                            rel="noreferrer">
+                            <li className="hero-social-icon">
+                                <AiFillGithub size={20} />
+                            </li>
+                        </a>
+                        <a
+                            href="https://mail.google.com/mail/u/0/?fs=1&to=mrjewel837@gmail.com&tf=cm"
+                            target="_blank"
+                            rel="noreferrer">
+                            <li className="hero-social-icon">
+                                <AiOutlineMail size={20} />
+                            </li>
+                        </a>
+                        <a
+                            href="https://www.instagram.com/mrjewel837/"
+                            target="_blank"
+                            rel="noreferrer">
+                            <li className="hero-social-icon">
+                                <AiOutlineInstagram size={20} />
+                            </li>
+                        </a>
                     </ul>
                 </div>
             </div>
