@@ -23,12 +23,19 @@ const AboutMe = () => {
                         <p>
                             I am a full-stack developer near Copenhagen,
                             Denamrk. I love creating things that live in the
-                            web. My fascination in web development started
-                            couple of years back that completely alterd my
-                            career path, and now I am a full stack developer
-                            with expertise in developing, debuging, testing and
-                            maintaining complex web application. My recent tech
-                            tacks are:
+                            web. As a full-stack developer with a strong
+                            foundation in both front-end and back-end
+                            technologies. I am proficient in a variety of
+                            programming languages and frameworks. I am
+                            passionate about creating intuitive and
+                            user-friendly web applications that are both
+                            visually appealing and highly functional. In my
+                            current role, I have been able to leverage my skills
+                            to develop and maintain a number of successful
+                            projects. I am always looking for new opportunities
+                            to learn and grow as a developer, and I am excited
+                            to see what the future holds. My recent tech tacks
+                            are:
                         </p>
                         <ul className="about-list">
                             <li>Javascript(ES6)</li>
