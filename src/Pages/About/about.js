@@ -24,9 +24,9 @@ const AboutMe = () => {
                             I am a full-stack developer near Copenhagen,
                             Denamrk. I love creating things that live in the
                             web. My fascination in web development started
-                            couple of years back that alterd my entire career
-                            path, and now I am a full stack developer with
-                            expertise in developing, debuging, testing and
+                            couple of years back that completely alterd my
+                            career path, and now I am a full stack developer
+                            with expertise in developing, debuging, testing and
                             maintaining complex web application. My recent tech
                             tacks are:
                         </p>
@@ -40,6 +40,7 @@ const AboutMe = () => {
                             <li>Redux</li>
                             <li>Jest</li>
                             <li>Webpack</li>
+                            <li>PHP</li>
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>SCSS</li>
