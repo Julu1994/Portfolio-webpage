@@ -19,13 +19,19 @@ const Navbar = ({ onclick, toggle }) => {
             <nav className="navbar">
                 <ul className="navbar-list">
                     <Link to="/" className="navbar-link">
-                        <li className="navbar-item">Home</li>
+                        <li className="navbar-item" onClick={onclick}>
+                            Home
+                        </li>
                     </Link>
                     <Link to="/about" className="navbar-link">
-                        <li className="navbar-item">About me</li>
+                        <li className="navbar-item" onClick={onclick}>
+                            About me
+                        </li>
                     </Link>
                     <Link to="/portfolio" className="navbar-link">
-                        <li className="navbar-item">Portfolio</li>
+                        <li className="navbar-item" onClick={onclick}>
+                            Portfolio
+                        </li>
                     </Link>
                 </ul>
             </nav>
