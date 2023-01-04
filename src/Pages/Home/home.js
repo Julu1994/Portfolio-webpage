@@ -1,49 +1,16 @@
 import "./home.scss";
 import React from "react";
-import ProjectPage from "../projectPage";
-import SkillPage from "../skillPage";
-import FeedbackPage from "../feedbackPage";
-import Intro from "../../Components/intro";
-import Profile from "../../Components/profile";
-import IntroTexts from "../../Components/introTexts";
-import { Bubble } from "../../Components/bubble";
 import Navbar from "../../Components/navbar";
-
+import HeroSection from "../../Components/heroSection";
 const Home = () => {
-    //console.log(window.innerHeight);
-    const [bg, setBg] = React.useState("header-profile");
-    const handleScroll = (event) => {
-        // console.log("scrollTop: ", event.currentTarget.scrollTop);
-        // console.log("offsetHeight: ", event.currentTarget.offsetHeight);
-
-        if (event.currentTarget.scrollTop < 450) {
-            setBg("header-profile bg-green");
-        }
-
-        if (event.currentTarget.scrollTop > 450) {
-            setBg("header-profile bg-yellow");
-        }
-        if (event.currentTarget.scrollTop > 1300) {
-            setBg("header-profile bg-pink");
-        }
-        if (event.currentTarget.scrollTop > 1900) {
-            setBg("header-profile bg-black");
-        }
+    const [toggle, setToggle] = React.useState(true);
+    const handleToggle = () => {
+        setToggle(!toggle);
     };
     return (
-        <div className="home" onScroll={handleScroll}>
-            <div className="header" id="home">
-                <Navbar />
-                <Intro />
-                <Profile />
-                <IntroTexts />
-                <Bubble />
-
-                <div className={bg}></div>
-            </div>
-            <ProjectPage />
-            <SkillPage />
-            <FeedbackPage />
+        <div className="home">
+            <Navbar onclick={handleToggle} toggle={toggle} />
+            <HeroSection click={handleToggle} />
         </div>
     );
 };

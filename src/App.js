@@ -1,16 +1,15 @@
-import Home from "./Pages/Home/home";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React from "react";
+import Loader from "./Components/loader";
+
+import Routing from "./routing";
 
 function App() {
-    return (
-        <div className="App">
-            <Router>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                </Routes>
-            </Router>
-        </div>
-    );
+    const [loading, setLoading] = React.useState(true);
+    const handleLoading = () => {
+        setLoading(false);
+    };
+    setTimeout(handleLoading, 3500);
+    return <div className="App">{loading ? <Loader /> : <Routing />}</div>;
 }
 
 export default App;
